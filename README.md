@@ -65,6 +65,134 @@ BE ->> DB: Recopilación e interpretación del mapeo
 ```
 
 
+# Aplicación de Mapeo de Síntomas - Diagramas
+
+## 1. Diagrama de Flujo
+```mermaid
+flowchart TD
+    A[Inicio] --> B[Abrir app]
+    B --> C[Seleccionar zona del cuerpo]
+    C --> D[Ingresar síntomas]
+    D --> E[Guardar datos]
+    E --> F[Consultar recomendaciones]
+    F --> G[Fin]
+```
+
+## 2. Diagrama de Secuencia
+```mermaid
+sequenceDiagram
+    participant Usuario
+    participant Interfaz
+    participant BaseDatos
+    Usuario->>Interfaz: Selecciona zona y síntomas
+    Interfaz->>BaseDatos: Guarda la información
+    BaseDatos-->>Interfaz: Confirma guardado
+    Interfaz-->>Usuario: Muestra resultado
+```
+
+## 3. Gráfica Circular
+```mermaid
+pie
+    title Distribución de Síntomas
+    "Cabeza": 30
+    "Torso": 25
+    "Brazos": 15
+    "Piernas": 20
+    "Otros": 10
+```
+
+## 4. Diagrama Entidad-Relación
+```mermaid
+erDiagram
+    USUARIO ||--o{ REGISTRO : tiene
+    REGISTRO }o--|| SINTOMA : asocia
+    REGISTRO }o--|| ZONA_CUERPO : afecta
+    USUARIO {
+        int id
+        string nombre
+        string email
+    }
+    REGISTRO {
+        int id
+        date fecha
+    }
+    SINTOMA {
+        int id
+        string nombre
+        string severidad
+    }
+    ZONA_CUERPO {
+        int id
+        string nombre
+    }
+```
+
+## 5. Diagrama Journey
+```mermaid
+journey
+    title Experiencia del Usuario
+    section Inicio
+      Abrir app: 5: Usuario
+    section Registro de Síntomas
+      Seleccionar zona: 4: Usuario
+      Ingresar síntomas: 4: Usuario
+    section Resultados
+      Guardar datos: 5: Sistema
+      Mostrar sugerencias: 4: Sistema
+```
+
+## 6. Diagrama Git
+```mermaid
+gitGraph
+    commit id: "Inicio"
+    branch develop
+    commit id: "UI básica"
+    branch feature-database
+    checkout feature-database
+    commit id: "Modelo de base de datos"
+    checkout develop
+    merge feature-database
+    commit id: "Interfaz avanzada"
+    checkout main
+    merge develop
+```
+
+## 7. Diagrama Gantt
+```mermaid
+gantt
+    title Planificación del Proyecto
+    dateFormat  YYYY-MM-DD
+    section Fase 1: Diseño
+      Diseño UI :done, 2025-02-01, 2025-02-07
+      Modelado BD :done, 2025-02-05, 2025-02-10
+    section Fase 2: Desarrollo
+      Implementación Backend :active, 2025-02-11, 2025-02-20
+      Implementación Frontend : 2025-02-15, 2025-02-25
+    section Fase 3: Pruebas y Lanzamiento
+      Pruebas : 2025-02-26, 2025-03-05
+      Lanzamiento : 2025-03-06, 2025-03-10
+```
+
+## 8. Diagrama de Requerimientos
+```mermaid
+mindmap
+  root((Requerimientos))
+    - Interfaz de usuario
+      - Selección de zonas
+      - Entrada de síntomas
+    - Base de datos
+      - Usuarios
+      - Síntomas
+      - Registros
+    - Funcionalidades
+      - Guardar datos
+      - Consultar registros
+      - Generar estadísticas
+    - Seguridad
+      - Autenticación
+      - Privacidad de datos
+
+
 
 ## Modelado de datos
 
