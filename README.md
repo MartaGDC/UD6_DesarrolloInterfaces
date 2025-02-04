@@ -191,7 +191,7 @@ mindmap
     - Seguridad
       - Autenticación
       - Privacidad de datos
-
+```
 
 
 ## Modelado de datos
