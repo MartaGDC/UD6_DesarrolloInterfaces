@@ -33,9 +33,14 @@ El código de este proyecto se encontrará disponible en un repositorio de [GitH
 ## Tareas :chart_with_downwards_trend:
 :heavy_check_mark: Desarrollo de la interfaz gráfica
 
+Desarrollo de una interfaz gráfica para que el usuario o el entrevistador clínico pueda señalar en un mapa corporal las zonas del cuerpo con dolor, pudiendo señalar diferentes tipos de dolor y sus extensiones. Además deberá contener un breve formulario por cada dolor introducido para poder describir sus caracteríticas.
+
 :heavy_check_mark: Desarrollo de la lógica de la aplicación
 
+La lógica consistirá en una interpretación de la información introducida acerca del mapeo, para poder interpretar el porcentaje de superficie afectada por cada dolor señalado, la lateralidad del dolor y sus dermatomas, y asociar cada dolor a sus características.
+
 :heavy_check_mark: Desarrollo de una base de datos
+
 
 :heavy_check_mark: Comunicación e integración de la interfaz con la lógica y la base de datos.
 
@@ -47,19 +52,15 @@ El código de este proyecto se encontrará disponible en un repositorio de [GitH
 ## Metodología
 ### Planificación y proceso:
 ```mermaid
-
 sequenceDiagram
-actor User as Usuario
+actor User as Usuario-Entrevista
 participant FE as Frontend
 participant BE as Backend
 participant DB as Base de Datos
 
-User ->> FE: Envío de datos
-FE ->> BE: Validación de datos
-BE ->> DB: Verificar existencia
-DB -->> BE: Datos correctos
-BE -->> FE: Respuesta validada
-FE -->> User: Login exitoso
+User ->> FE: Introducción de datos
+FE ->> BE: Parametrización y cuantificación del mapeo
+BE ->> DB: Recopilación e interpretación del mapeo
 
 ```
 
