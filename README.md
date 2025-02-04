@@ -33,9 +33,11 @@ El código de este proyecto se encontrará disponible en un repositorio de [GitH
 ## Tareas :chart_with_downwards_trend:
 :heavy_check_mark: Desarrollo de la interfaz gráfica
 
+:heavy_check_mark: Desarrollo de la lógica de la aplicación
+
 :heavy_check_mark: Desarrollo de una base de datos
 
-:heavy_check_mark: Comunicación e integración
+:heavy_check_mark: Comunicación e integración de la interfaz con la lógica y la base de datos.
 
 
 
@@ -44,6 +46,20 @@ El código de este proyecto se encontrará disponible en un repositorio de [GitH
 
 ## Metodología
 ### Planificación y proceso:
+sequenceDiagram
+actor User as Usuario
+participant FE as Frontend
+participant BE as Backend
+participant DB as Base de Datos
+
+User ->> FE: Envío de datos
+FE ->> BE: Validación de datos
+BE ->> DB: Verificar existencia
+DB -->> BE: Datos correctos
+BE -->> FE: Respuesta validada
+FE -->> User: Login exitoso
+
+
 
 
 ## Modelado de datos
