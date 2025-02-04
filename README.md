@@ -1,8 +1,6 @@
 # Proyecto Final de Grado DAM:
-# <p style="text-align: center;">Desarrollo de una aplicación móvil para la cuantificación del dolor crónico</p>
-***
-
 <br></br>
+# <p style="text-align: center;">Desarrollo de una aplicación móvil para la cuantificación del dolor crónico</p>
 
 ## Resumen
 **Objetivos**: Desarrollar una aplicación móvil para la cuantificación del dolor en pacientes con dolor crónico que permita su mapeo corporal y caracterización.
