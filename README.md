@@ -51,23 +51,10 @@ La lógica consistirá en una interpretación de la información introducida ace
 
 ## Metodología
 ### Planificación y proceso:
-```mermaid
-sequenceDiagram
-actor User as Usuario-Entrevista
-participant FE as Frontend
-participant BE as Backend
-participant DB as Base de Datos
-
-User ->> FE: Introducción de datos
-FE ->> BE: Parametrización y cuantificación del mapeo
-BE ->> DB: Recopilación e interpretación del mapeo
-
-```
 
 
-# Aplicación de Mapeo de Síntomas - Diagramas
 
-## 1. Diagrama de Flujo
+
 ```mermaid
 flowchart TD
     A[Inicio] --> B[Abrir app]
@@ -78,7 +65,7 @@ flowchart TD
     F --> G[Fin]
 ```
 
-## 2. Diagrama de Secuencia
+### Diagrama de Secuencia
 ```mermaid
 sequenceDiagram
     participant Usuario
@@ -90,7 +77,7 @@ sequenceDiagram
     Interfaz-->>Usuario: Muestra resultado
 ```
 
-## 3. Gráfica Circular
+### Gráfica Circular
 ```mermaid
 pie
     title Distribución de Síntomas
@@ -101,7 +88,7 @@ pie
     "Otros": 10
 ```
 
-## 4. Diagrama Entidad-Relación
+### Diagrama Entidad-Relación
 ```mermaid
 erDiagram
     USUARIO ||--o{ REGISTRO : tiene
@@ -127,7 +114,7 @@ erDiagram
     }
 ```
 
-## 5. Diagrama Journey
+### Diagrama Journey
 ```mermaid
 journey
     title Experiencia del Usuario
@@ -141,7 +128,7 @@ journey
       Mostrar sugerencias: 4: Sistema
 ```
 
-## 6. Diagrama Git
+### Diagrama Git
 ```mermaid
 gitGraph
     commit id: "Inicio"
@@ -157,7 +144,7 @@ gitGraph
     merge develop
 ```
 
-## 7. Diagrama Gantt
+### Diagrama Gantt
 ```mermaid
 gantt
     title Planificación del Proyecto
@@ -173,7 +160,7 @@ gantt
       Lanzamiento : 2025-03-06, 2025-03-10
 ```
 
-## 8. Diagrama de Requerimientos
+### Diagrama de Requerimientos
 ```mermaid
 mindmap
   root((Requerimientos))
