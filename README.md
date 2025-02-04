@@ -2,7 +2,7 @@
 <br></br>
 # <p style="text-align: center;">Desarrollo de una aplicación móvil para la cuantificación del dolor crónico</p>
 
-## Resumen
+## Resumen :clipboard:
 **Objetivos**: Desarrollar una aplicación móvil para la cuantificación del dolor en pacientes con dolor crónico que permita su mapeo corporal y caracterización.
 
 **Tareas**:
@@ -30,20 +30,21 @@ El objetivo de este proyecto es desarrollar una aplicación que permita facilita
 El código de este proyecto se encontrará disponible en un repositorio de [GitHub](https://github.com/MartaGDC).
 <br></br>
 
-## Tareas
+## Tareas :chart_with_downwards_trend:
 :heavy_check_mark: Desarrollo de la interfaz gráfica
 
-- Desarrollo de una base de datos que permita recoger la información aportada por los usuarios, e información calculada como porcentaje de superficie corporal afectada, lateralidad del dolor, y afectación por dermatomas. Comunicación e integración de la interfaz con la lógica y la base de datos.
+:heavy_check_mark: Desarrollo de una base de datos
+
+:heavy_check_mark: Comunicación e integración
+
+
 
 
 <br></br>
 
 ## Metodología
-### Librerías
-
 ### Planificación y proceso:
 
-## Presupuesto
 
 ## Modelado de datos
 
