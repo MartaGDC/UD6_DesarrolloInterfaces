@@ -16,44 +16,32 @@
 - Kotlin como lenguaje de programación
 - Posible uso de bases de datos relacionales o de bases de datos NoSQL.
 - Tablet Android para la ejecución de la aplicación creada.
-<br></br>
 
 Este proyecto se vincula con Unizar Universa y se engloba en investigaciones acerca del dolor crónico.
 <br></br>
 
+## Introducción :question:
+El dolor crónico se define como aquel dolor cuya duración es mayr a 3 meses. Según el "Barómetro del dolor crónico en España 2022"[[1]-[2]], un 25,9% de las personas encuestadas padecen dolor persistente, afectando especialmente a mujeres y a personas mayores de 55 años. Además, más de la mitad de las personas que sufren dolor crónico lo clasifican de intensidad elevada o insoportable.
 
-## Introducción 
+![Barómetro del dolor en España](images/BarometroDolor.jpg)
 
-Imagen
-![Alt text](images/lang_english.png)
+El objetivo de este proyecto es desarrollar una aplicación que permita facilitar la conversación en torno al dolor y ayude a su cuantificación objetiva, centrandose en la superficie afectada, su lateralidad y los dermatomas involucrados, y secundariamente de las características semióticas y simtomáticas del dolor.
 
+El código de este proyecto se encontrará disponible en un repositorio de [GitHub](https://github.com/MartaGDC).
+<br></br>
+
+## Tareas
+:heavy_check_mark: Desarrollo de la interfaz gráfica
+
+- Desarrollo de una base de datos que permita recoger la información aportada por los usuarios, e información calculada como porcentaje de superficie corporal afectada, lateralidad del dolor, y afectación por dermatomas. Comunicación e integración de la interfaz con la lógica y la base de datos.
 
 
 <br></br>
-
-## Repositorio
-[GitHub](https://github.com/MartaGDC)
-
-
-
-
-
-
-
-## Requisitos
-
-## Tareas
 
 ## Metodología
 ### Librerías
 
 ### Planificación y proceso:
-- Description:
-    - Web
-    - Discourse
-- Analysis of the relationship between countries' characteristics and sentiment and emotionality.
-- [Streamlit page](https://ironhacking.streamlit.app/) creation.
-
 
 ## Presupuesto
 
@@ -66,18 +54,14 @@ Imagen
 ## Arquitectura de la aplicación
 
 ## Bibliografía
-ejemplo de referencia [1]
-
-1. E. Lamontagne, M. d'Elbée, M. W. Ross, A. Carroll, A. du Plessis, L. Loures. A socioecological measurement of homophobia for all countries and its public health impact. European Journal of Public Health. 28.5 (2018): 967-972.
-2. World Bank
-3. LGBT+ Rights
-4. Political Stability and Absence of Violence/Terrorism: Percentile Rank
+1. Barómetro del dolor crónico en España 2022. Análisis de situación del impacto del dolor crónico a nivel nacional. Observatorio del dolor. Fundación Grünenthal España [citado 04 Feb 2025]. Disponible en: https://www.fundaciongrunenthal.es/fundacion/pdfs/barometro-dolor-cronico-espana-2022.pdf.
+2. Infografía del barómetro del dolor crónico en España 2022. Análisis de situación del impacto del dolor crónico a nivel nacional. Observatorio del dolor. Fundación Grünenthal España [citado 04 Feb 2025]. Disponible en: https://www.dolor.com/para-sus-pacientes/otros-recursos/barometro-dolor-cronico-espana-2022
 
 
-[1]: <https://doi.org/10.1093/eurpub/cky023> "E. Lamontagne, M. d'Elbée, M. W. Ross, A. Carroll, A. du Plessis, L. Loures. A socioecological measurement of homophobia for all countries and its public health impact. European Journal of Public Health. 28.5 (2018): 967-972."
-[2]: <https://data.worldbank.org/> "World Bank"
-[3]: <https://ourworldindata.org/lgbt-rights> "LGBT+ Rights"
-[4]: <https://data.worldbank.org/indicator/PV.PER.RNK> "Political Stability and Absence of Violence/Terrorism: Percentile Rank"
+
+[1]: <https://www.fundaciongrunenthal.es/fundacion/pdfs/barometro-dolor-cronico-espana-2022.pdf> " Barómetro del dolor crónico en España 2022. Análisis de situación del impacto del dolor crónico a nivel nacional. Observatorio del dolor. Fundación Grünenthal España."
+[2]: <https://www.dolor.com/para-sus-pacientes/otros-recursos/barometro-dolor-cronico-espana-2022/> "Infografía del barómetro del dolor crónico en España 2022. Análisis de situación del impacto del dolor crónico a nivel nacional. Observatorio del dolor. Fundación Grünenthal España"
+
 
 
 <br></br>
