@@ -1,6 +1,6 @@
 # Proyecto Final de Grado DAM:
 <br></br>
-# <center>Desarrollo de una aplicación móvil para la cuantificación del dolor crónico</center>
+# <center><p style="color: tan;"> Desarrollo de una aplicación móvil para la cuantificación del dolor crónico</p></center>
 
 ## Resumen :clipboard:
 **Objetivos**: Desarrollar una aplicación móvil para la cuantificación del dolor en pacientes con dolor crónico que permita su mapeo corporal y caracterización.
@@ -18,6 +18,7 @@
 - Tablet Android para la ejecución de la aplicación creada.
 
 Este proyecto se vincula con Unizar Universa y se engloba en investigaciones acerca del dolor crónico.
+
 <br></br>
 
 ## Introducción :question:
@@ -28,9 +29,11 @@ El dolor crónico se define como aquel dolor cuya duración es mayr a 3 meses. S
 El objetivo de este proyecto es desarrollar una aplicación que permita facilitar la conversación en torno al dolor y ayude a su cuantificación objetiva, centrandose en la superficie afectada, su lateralidad y los dermatomas involucrados, y secundariamente de las características semióticas y simtomáticas del dolor.
 
 El código de este proyecto se encontrará disponible en un repositorio de mi cuenta personal de [GitHub](https://github.com/MartaGDC).
+
 <br></br>
 
-## Tareas :chart_with_downwards_trend:
+## Metodología :chart_with_downwards_trend:
+### Tareas
 :heavy_check_mark: Desarrollo de la interfaz gráfica
 
 Desarrollo de una interfaz gráfica para que el usuario o el entrevistador clínico pueda señalar en un mapa corporal las zonas del cuerpo con dolor, pudiendo señalar diferentes tipos de dolor y sus extensiones. Además deberá contener un breve formulario por cada dolor introducido para poder describir sus caracteríticas.
@@ -41,41 +44,99 @@ La lógica consistirá en una interpretación de la información introducida ace
 
 :heavy_check_mark: Desarrollo de una base de datos
 
+Esta base de datos podrá ser noSQL según las necesidades y perspectivas futuras el equipo.
 
 :heavy_check_mark: Comunicación e integración de la interfaz con la lógica y la base de datos.
-
-
-
-
 <br></br>
 
-## Metodología
 ### Planificación y proceso:
-#### Diagrama Gantt
 ```mermaid
 gantt
     title Planificación del Proyecto
-    dateFormat  YYYY-MM-DD
+    dateFormat  DD-MM-YYYY
     section Fase 1: Diseño
-      Diseño UI :done, 2025-02-01, 2025-02-07
-      Modelado BD :done, 2025-02-05, 2025-02-10
+      Diseño UI : ui, 2025-03-20, 14d
+      Creación base de datos : bbdd, 2025-03-27, 14d
     section Fase 2: Desarrollo
-      Implementación Backend :active, 2025-02-11, 2025-02-20
-      Implementación Frontend : 2025-02-15, 2025-02-25
+      Lógica de la aplicación : logic, 2025-04-04, 14d
+      Lógica para interpretar el mapeo: map, 2025-04-10, 21d
+      Conexión con BD: conbd, 2025-05-01, 14d
     section Fase 3: Pruebas y Lanzamiento
-      Pruebas : 2025-02-26, 2025-03-05
-      Lanzamiento : 2025-03-06, 2025-03-10
+      Pruebas y soluciones: test, 2025-05-10, 20d
+      Lanzamiento : deploy, 2025-05-30, 9d
 ```
+_Diagrama de Gant_: Planificafación del proyecto.
+<br></br>
 
+### Base de datos
+La base de datos a utilizar será considerada a lo largo del proceso, dado que es posible que en este contexto resulte de utilidad usar bases de datos no SQL.
+En caso de utilizar base de datos relacional, el diagrama de entidad-relación sería:
 
-#### Superficie afectada según lateralidad
 ```mermaid
-pie
-    "Derecha": 43
-    "Izquierda": 36
-    "Mixto": 21
+erDiagram
+    USUARIO ||--|{ REGISTRO : tiene
+    REGISTRO ||--|{ DOLOR : contiene
+    DOLOR }o--|{ ZONA_CUERPO : afecta
+    DOLOR }o--|{ SINTOMA : presenta    
+    USUARIO {
+        int id
+        int edad
+        string sexo
+        string otros_determinantes
+    }
+    REGISTRO {
+        int id
+        int id_usuario
+        date fecha
+    }
+    DOLOR {
+        int id
+        int id_registro
+    }
+    SINTOMA {
+        int id
+        int id_dolor
+        string descripcion
+    }
+
+    ZONA_CUERPO {
+        int id
+        int id_dolor
+        string lado
+        string dermatoma
+    }
+
 ```
-También se podrán presentar porcentajes de afectación de cada uno de los 31 pares de dermatomas, o por zonas amplias del cuerpo (cabeza, espalda...).
+_Diagrama de Entidad-Relación_
+<br></br>
+
+### Funcionamiento de la aplicación
+
+```mermaid
+sequenceDiagram
+    participant Usuario
+    participant Clínico
+    participant Interfaz
+    participant BaseDatos
+    Usuario->>Interfaz: Selecciona zona y síntomas
+    Clínico->>Interfaz: Selecciona zona y síntomas
+    Interfaz->>BaseDatos: Guarda la información
+    BaseDatos-->>Interfaz: Confirma guardado
+    Interfaz-->>Clínico: Muestra resultado
+    Clínico -->>Usuario: Comunica resultados
+```
+
+```mermaid
+graph TD
+    A[Anrir aplicación] --> B[Ingresar extensión de cada dolor]
+    B --> C{Selección del dolor}
+    C --> D[Ingresar características de dolor seleccionado]
+    D --> E[Guardar datos]
+    E --> F{Introducción de información completada}
+    F -- No --> C
+    F -- Sí --> G[Salir de la aplicación]
+
+```
 
 
 
@@ -132,79 +193,17 @@ mindmap
 ```
 
 
-## Modelado de datos
-La base de datos a utilizar será considerada a lo largo del proceso, dado que es posible que en este contexto resulte de utilidad usar bases de datos no relacionales.
-En caso de utilizar base de datos relacional, el diagrama de entidad-relación sería:
 
+#### Superficie afectada según lateralidad
 ```mermaid
-erDiagram
-    USUARIO ||--|{ REGISTRO : tiene
-    REGISTRO ||--|{ DOLOR : contiene
-    DOLOR }o--|{ ZONA_CUERPO : afecta
-    DOLOR }o--|{ SINTOMA : presenta    
-    USUARIO {
-        int id
-        int edad
-        string sexo
-        string otros_determinantes
-    }
-    REGISTRO {
-        int id
-        int id_usuario
-        date fecha
-    }
-    DOLOR {
-        int id
-        int id_registro
-    }
-    SINTOMA {
-        int id
-        int id_dolor
-        string descripcion
-    }
-
-    ZONA_CUERPO {
-        int id
-        int id_dolor
-        string lado
-        string dermatoma
-    }
-
+pie
+    "Derecha": 43
+    "Izquierda": 36
+    "Mixto": 21
 ```
-
-## Diseño funcional
-
-## Diseño interfaz usuario
-
-## Arquitectura de la aplicación
-El funcionamiento de la aplicación se pu
+También se podrán presentar porcentajes de afectación de cada uno de los 31 pares de dermatomas, o por zonas amplias del cuerpo (cabeza, espalda...).
 
 
-```mermaid
-sequenceDiagram
-    participant Usuario
-    participant Clínico
-    participant Interfaz
-    participant BaseDatos
-    Usuario->>Interfaz: Selecciona zona y síntomas
-    Clínico->>Interfaz: Selecciona zona y síntomas
-    Interfaz->>BaseDatos: Guarda la información
-    BaseDatos-->>Interfaz: Confirma guardado
-    Interfaz-->>Clínico: Muestra resultado
-    Clínico -->>Usuario: Comunica resultados
-```
-
-```mermaid
-graph TD
-    A[Anrir aplicación] --> B[Ingresar extensión de cada dolor]
-    B --> C{Selección del dolor}
-    C --> D[Ingresar caracteristicas de dolor seleccionado]
-    D --> E[Guardar datos]
-    E --> F{Intorduccion de informacion completada}
-    F -- No --> C
-    F -- Sí --> G[Salir de la aplicación]
-
-```
 
 ## Bibliografía
 1. Barómetro del dolor crónico en España 2022. Análisis de situación del impacto del dolor crónico a nivel nacional. Observatorio del dolor. Fundación Grünenthal España [citado 04 Feb 2025]. Disponible en: https://www.fundaciongrunenthal.es/fundacion/pdfs/barometro-dolor-cronico-espana-2022.pdf.
