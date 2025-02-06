@@ -26,7 +26,304 @@ El dolor crónico se define como aquel dolor cuya duración es mayr a 3 meses. S
 
 ![Barómetro del dolor en España](images/BarometroDolor.jpg)
 
-El objetivo de este proyecto es desarrollar una aplicación que permita facilitar la conversación en torno al dolor y ayude a su cuantificación objetiva, centrandose en la superficie afectada, su lateralidad y los dermatomas involucrados, y secundariamente de las características semióticas y simtomáticas del dolor.
+
+En la siguiente tabla se muestran las características del dolor crónico entre la población encuentada[1].
+| Variables | Categorías | % |
+|-----------|------------|---| 
+| N=1.825 |
+| Prevalencia | Sin dolor | 66,4 |
+| | Dolor Continuo | 7,7 |
+| | Dolor Crónico  |25,9 |
+| Duración del dolor crónico en años | Media(DT) | 6,83 (8,41) |
+| Causa diagnóstica del DC (puede haber más de una) | Artrosis | 33 |
+| | Osteoporosis | 32,9 |
+| | Dolor cervical | 46,2 |
+| | Dolor lumbar | 58,1 |
+| | Traumatismo | 14,5 |
+| | Migraña y otros dolores de cabeza crónicos | 31,5 | 
+| | Dolor relacionado intervención quirúrgica | 15,1 |
+| | Artritis reumatoide | 18,1 |
+| | Ciática | 25,6 |
+| | Contracturas musculares | 50,6 |
+| | Cáncer | 3,6 | 
+| | Hombro | 29,2 |
+| | Fibromialgia | 10,4 | 
+| | Neuropatía diabética u otras neuropatías | 7,7 |
+| | Síndrome del túnel carpiano | 12,2 | 
+| | Enfermedad de Crohn o colitis ulcerosa | 4,1 | 
+| | Hernia discal | 1,2 | 
+| | Dismenorrea/ endometriosis | 1 |
+| | Desconoce la causa patológica | 27,1 | 
+| | Otras | 5,9 |
+| Donde se localiza el dolor que más afecta | Es un dolor generalizado | 13,2 |
+| | Cabeza |9,1 |
+| | Cuello (cervicales) | 10,6 |
+| | Espalda | 28 |
+| | Extremidades y/o articulaciones | 33,1 |
+| | Pecho | 1 |
+| | Abdomen | 4 |
+| | Otro | 1,1 |
+| Trastorno del sueño debido al DC | 64,8 |
+| Intensidad del Dolor | Muy poco o poco (1-3)|
+| | Moderado (4-6) |
+| | Mucho (7-9) 
+| | Insoportable (10) 
+| | Media (DT) 
+85 
+608 
+1.051 
+81 
+6,78 (1,72) 
+4,7 
+33,3 
+57,6 
+4,4 
+Intensidad del Dolor por grupos de edad 18-34 
+35-54 
+55-75 
+76-85 
+300 
+719 
+639 
+167 
+6,66 (1,58) 
+6,95 (1,63) 
+6,89 (1,65) 
+5,85 (2,21) 
+Causas del dolor de individuos con intensidad de 
+dolor moderado (N=608) 
+Artrosis Sí 
+No 
+176 
+432 
+28,9 
+71,1 
+Osteoporosis Sí 
+No 
+175 
+433 
+28,8 
+71,2 
+Dolor cervical Sí 
+No 
+241 
+367 
+39,6 
+60,4 
+Dolor lumbar Sí 
+No 
+332 
+276 
+54,6 
+45,4 
+Traumatismo Sí 
+No 
+77 
+531 
+12,7 
+87,3 
+Migraña y otros dolores de cabeza crónicos Sí 
+No 
+153 
+455 
+25,2 
+74,8 
+Dolor relacionado intervención quirúrgica Sí 
+No 
+77 
+531 
+12,7 
+87,3 
+Artritis reumatoide Sí 
+No 
+83 
+525 
+13,7 
+86,3 
+Ciática Sí 
+No 
+119 
+489 
+19,6 
+80,4 
+Contracturas musculares Sí 
+No 
+270 
+338 
+44,4 
+55,6 
+Cáncer Sí 
+No 
+18 
+590 
+3,0 
+97,0 
+Hombro Sí 
+No 
+139 
+469 
+22,9 
+77,1 
+Fibromialgia Sí 
+No 
+29 
+579 
+4,8 
+95,2 
+Neuropatía diabética u otras neuropatías Sí 
+No 
+42 
+566 
+6,9 
+93,1 
+Síndrome del túnel carpiano Sí 
+No 
+53 
+555 
+8,7 
+91,3 
+Enfermedad de Crohn o colitis ulcerosa Sí 
+No 
+23 
+585 
+3,8 
+96,2 
+Hernia discal Sí 
+No 
+2 
+606 
+0,3 
+99,7 
+Dismenorrea/ endometriosis Sí 
+No 
+2 
+606 
+0,3 
+99,7 
+Desconoce la causa patológica Sí 
+No 
+175 
+433 
+28,8 
+71,2 
+Causas del dolor de individuos con intensidad de 
+dolor mucha (N=1051) 
+Artrosis Sí 
+No 
+366 
+685 
+34,8 
+65,2 
+Osteoporosis Sí 
+No 
+365 
+686 
+34,7 
+65,3 
+Dolor cervical Sí 
+No 
+529 
+522 
+50,3 
+49,7 
+Dolor lumbar Sí 
+No 
+642 
+409 
+61,1 
+38,9 
+Traumatismo Sí 
+No 
+157 
+894 
+14,9 
+85,1 
+Migraña y otros dolores de cabeza crónicos Sí 
+No 
+359 
+692 
+34,2 
+65,8 
+Dolor relacionado intervención quirúrgica Sí 
+No 
+166 
+885 
+15,8 
+84,2 
+Artritis reumatoide Sí 
+No 
+206 
+845 
+19,6 
+80,4 
+Ciática Sí 
+No 
+304 
+747 
+28,9 
+71,1 
+Contracturas musculares Sí 
+No 
+570 
+481 
+54,2 
+45,8 
+Cáncer Sí 
+No 
+42 
+1009 
+4,0 
+96,0 
+Hombro Sí 
+No 
+334 
+717 
+31,8 
+68,2 
+Fibromialgia Sí 
+No 
+137 
+914 
+13,0 
+87,0 
+Neuropatía diabética u otras neuropatías Sí 
+No 
+81 
+970 
+7,7 
+92,3 
+Síndrome del túnel carpiano Sí 
+No 
+155 
+896 
+14,7 
+85,3 
+Enfermedad de Crohn o colitis ulcerosa Sí 
+No 
+44 
+1007 
+4,2 
+95,8 
+Hernia discal Sí 
+No 
+17 
+1034 
+1,6 
+98,4 
+Dismenorrea/ endometriosis Sí 
+No 
+14 
+1037 
+1,3 
+98,7 
+Desconoce la causa patológica Sí 
+No 
+267 
+784 
+25,4 
+74,6
+
+El objetivo de este proyecto es desarrollar una aplicación que permita facilitar la conversación en torno al dolor y ayude a su cuantificación objetiva, centrándose en la superficie afectada, su lateralidad y los dermatomas involucrados, y secundariamente de las características semiológicas y simtomáticas del dolor.
 
 El código de este proyecto se encontrará disponible en un repositorio de mi cuenta personal de [GitHub](https://github.com/MartaGDC).
 
@@ -36,7 +333,7 @@ El código de este proyecto se encontrará disponible en un repositorio de mi cu
 ### Tareas
 :heavy_check_mark: Desarrollo de la interfaz gráfica
 
-Desarrollo de una interfaz gráfica para que el usuario o el entrevistador clínico pueda señalar en un mapa corporal las zonas del cuerpo con dolor, pudiendo señalar diferentes tipos de dolor y sus extensiones. Además deberá contener un breve formulario por cada dolor introducido para poder describir sus caracteríticas.
+Desarrollo de una interfaz gráfica para que el usuario o el entrevistador clínico pueda señalar en un mapa corporal las zonas del cuerpo con dolor, pudiendo señalar diferentes tipos de dolor y sus extensiones. Además, deberá contener un breve formulario por cada dolor introducido para poder describir sus caracteríticas.
 
 :heavy_check_mark: Desarrollo de la lógica de la aplicación
 
@@ -49,11 +346,10 @@ Esta base de datos podrá ser noSQL según las necesidades y perspectivas futura
 :heavy_check_mark: Comunicación e integración de la interfaz con la lógica y la base de datos.
 <br></br>
 
-### Planificación y proceso:
-La planificación seguirá un plantemaiento en cascada siguiendo estas tareas a lo largo de los próximos meses.
+### Planificación y proceso
+La planificación seguirá una metodología en cascada siguiendo estas tareas a lo largo de los próximos meses.
 ```mermaid
 gantt
-    title Planificación del Proyecto
     dateFormat  DD-MM-YYYY
     section Fase 1: Diseño
       Diseño UI : ui, 2025-03-20, 14d
@@ -66,21 +362,117 @@ gantt
       Pruebas y soluciones: test, 2025-05-10, 20d
       Lanzamiento : deploy, 2025-05-30, 9d
 ```
-_Diagrama de Gant_: Planificafación del proyecto.
+<sub>_Diagrama de Gant_: Planificafación del proyecto.</sub>
 
-En el siguiente diagrama se muestran los avances hasta el momento actual de este respositorio, que solo contiene la rama Main:
+En el siguiente diagrama se muestran los avances hasta el momento actual de este respositorio, que sólo contiene la rama Main:
 ```mermaid
 gitGraph
-    commit id: "Inicio"
-    commit id: "UI básica"
-    commit id: "Modelo de base de datos"
-    commit id: "Interfaz avanzada"
+    commit id: "Borrador y ejemplos"
+    commit id: "titulo html"
+    commit id: "images"
+    commit id: "diagram"
+    commit id: "colores"
+    commit id: "diagrama git"
 ```
-_Diagrama Git_
+<sub>_Diagrama Git_: Respositorio actual.</sub>
 
+Para poder trabajar en tareas en paralelo, se crearán diferentes ramas según su funcionalidad: interfaz, lógica, base de datos y conexión con la base de datos.
 <br></br>
 
-### Base de datos
+### Arquitectura
+#### Funcionamiento de la aplicación
+En el siguiente diagrama de flujo se observa el funcionamiento general de la aplicación.
+
+```mermaid
+graph TD
+    A[Abrir aplicación] --> B[Ingresar extensión de cada dolor]
+    B --> C{Selección del dolor}
+    C --> D[Ingresar características de dolor seleccionado]
+    D --> E[Guardar datos]
+    E --> F{Introducción de información completada}
+    F -- No --> C
+    F -- Sí --> G[Salir de la aplicación]
+
+```
+<sub>_Diagrama de flujo_: Funcionamiento de la aplicación</sub>
+
+En el siguiente diagrama se muestra el movimiento de la información para el funcionamiento de la aplicación.
+
+```mermaid
+sequenceDiagram
+    participant Usuario
+    participant Clínico
+    participant Interfaz
+    participant BaseDatos
+    Usuario->>Interfaz: Selecciona zona y síntomas
+    Clínico->>Interfaz: Selecciona zona y síntomas
+    Interfaz->>BaseDatos: Guarda la información
+    BaseDatos-->>Interfaz: Confirma guardado
+    Interfaz-->>Clínico: Muestra resultado
+    Clínico -->>Usuario: Comunica resultados
+```
+<sub>_Diagrama de secuencia_: Flujo de la información en la aplicación. </sub>
+<br></br>
+
+#### Requerimientos de la aplicación
+En el siguiente diagrama se muestran los requerimientos de la aplicación, los elementos que la componen y sus relaciones.
+```mermaid
+requirementDiagram
+    requirement Aplicacion {
+        id: 1
+        text: "La aplicación debe permitir al usuario registrar la extensión del dolor y sus características."
+        risk: medium
+        verifyMethod: test
+    }
+    requirement Interfaz {
+        id: 2
+        text: "La aplicación debe tener una interfaz intuitiva y fácil de usar."
+        risk: low
+        verifyMethod: inspection
+    }
+    requirement BaseDeDatos {
+        id: 3
+        text: "La aplicación debe almacenar los datos de los usuarios y la información sobre su dolor de manera segura."
+        risk: high
+        verifyMethod: analysis
+    }
+    requirement Seguridad {
+        id: 4
+        text: "La aplicación debe garantizar la privacidad y seguridad de los datos."
+        risk: high
+        verifyMethod: analysis
+    }
+    requirement Reportes {
+        id: 5
+        text: "La aplicación debe ser capaz de generar estadísticas y reportes."
+        risk: medium
+        verifyMethod: demonstration
+    }
+    element Sistema {
+        type: system
+    }
+    element InterfazUsuario {
+        type: userExperience
+    }
+    element Almacenamiento {
+        type: database
+    }
+    element ProteccionDatos {
+        type: security
+    }
+    element GeneracionReportes {
+        type: reporting
+    }
+    Sistema - satisfies -> Aplicacion
+    InterfazUsuario - satisfies -> Interfaz
+    Almacenamiento - satisfies -> BaseDeDatos
+    ProteccionDatos - satisfies -> Seguridad
+    GeneracionReportes - satisfies -> Reportes
+```
+<sub>_Diagrama de requerimientos_: Requerimientos y elementos necesarios en la aplicación. </sub>
+<br></br>
+
+#### Base de datos
 La base de datos a utilizar será considerada a lo largo del proceso, dado que es posible que en este contexto resulte de utilidad usar bases de datos no SQL.
 En caso de utilizar base de datos relacional, el diagrama de entidad-relación sería:
 
@@ -119,48 +511,14 @@ erDiagram
     }
 
 ```
-_Diagrama de Entidad-Relación_
+<sub>_Diagrama de Entidad-Relación_</sub>
 <br></br>
 
-### Funcionamiento de la aplicación
-En el siguiente diagrama de flujo se observa el funcionamiento general de la aplicación.
-
-```mermaid
-graph TD
-    A[Abrir aplicación] --> B[Ingresar extensión de cada dolor]
-    B --> C{Selección del dolor}
-    C --> D[Ingresar características de dolor seleccionado]
-    D --> E[Guardar datos]
-    E --> F{Introducción de información completada}
-    F -- No --> C
-    F -- Sí --> G[Salir de la aplicación]
-
-```
-_Diagrama de flujo_
-
-En el siguiente diagrama se muestra el movimiento de la información para el funcionamiento de la aplicación.
-
-```mermaid
-sequenceDiagram
-    participant Usuario
-    participant Clínico
-    participant Interfaz
-    participant BaseDatos
-    Usuario->>Interfaz: Selecciona zona y síntomas
-    Clínico->>Interfaz: Selecciona zona y síntomas
-    Interfaz->>BaseDatos: Guarda la información
-    BaseDatos-->>Interfaz: Confirma guardado
-    Interfaz-->>Clínico: Muestra resultado
-    Clínico -->>Usuario: Comunica resultados
-```
-_Diagrama de secuencia_
-<br></br>
 
 ### Experiencia de usuario
-El uso inicialmente previsto para esta aplicación está dirigido a profesionales sanitarios, sin embargo a lo largo del desarrollo será posible considerar el valor de la aplicación para el control y monitorización del dolor por parte de los propios usuarios con dolor. Por este motivo, se muestra un diagrama de Journey para poder valorar la experiencia del usuario sin formación sanitaria.
+El uso inicialmente previsto para esta aplicación está dirigido a profesionales sanitarios, sin embargo a lo largo del desarrollo será posible considerar el valor de la aplicación para el control y monitorización del dolor por parte de los propios usuarios con dolor. Por este motivo, se muestra un diagrama de Journey para poder valorar la experiencia del usuario sin formación sanitaria, señalando aquellos puntos donde pueda haber mayor dificultad.
 ```mermaid
 journey
-    title Experiencia del Usuario
     section Inicio
       Abrir app: 6: Usuario
     section Mapeo
@@ -174,30 +532,12 @@ journey
       Guardar datos: 5: Sistema
       Mostrar resumen de interes para el usuario: 4: Sistema
 ```
+<sub>_Diagrama de Journey_: Satisfacción del usuario en las funciones de la aplicación.</sub>
+<br></br>
 
 
-
-### Diagrama de Requerimientos
-```mermaid
-mindmap
-  root((Requerimientos))
-    - Interfaz de usuario
-      - Selección de zonas
-      - Entrada de síntomas
-    - Base de datos
-      - Usuarios
-      - Síntomas
-      - Registros
-    - Funcionalidades
-      - Guardar datos
-      - Consultar registros
-      - Generar estadísticas
-    - Seguridad
-      - Autenticación
-      - Privacidad de datos
-```
-
-
+## Conclusiones
+La generación de
 
 #### Superficie afectada según lateralidad
 ```mermaid
