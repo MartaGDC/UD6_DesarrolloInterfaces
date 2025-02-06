@@ -50,6 +50,7 @@ Esta base de datos podrá ser noSQL según las necesidades y perspectivas futura
 <br></br>
 
 ### Planificación y proceso:
+La planificación seguirá un plantemaiento en cascada siguiendo estas tareas a lo largo de los próximos meses.
 ```mermaid
 gantt
     title Planificación del Proyecto
@@ -66,6 +67,17 @@ gantt
       Lanzamiento : deploy, 2025-05-30, 9d
 ```
 _Diagrama de Gant_: Planificafación del proyecto.
+
+En el siguiente diagrama se muestran los avances hasta el momento actual de este respositorio, que solo contiene la rama Main:
+```mermaid
+gitGraph
+    commit id: "Inicio"
+    commit id: "UI básica"
+    commit id: "Modelo de base de datos"
+    commit id: "Interfaz avanzada"
+```
+_Diagrama Git_
+
 <br></br>
 
 ### Base de datos
@@ -111,6 +123,22 @@ _Diagrama de Entidad-Relación_
 <br></br>
 
 ### Funcionamiento de la aplicación
+En el siguiente diagrama de flujo se observa el funcionamiento general de la aplicación.
+
+```mermaid
+graph TD
+    A[Abrir aplicación] --> B[Ingresar extensión de cada dolor]
+    B --> C{Selección del dolor}
+    C --> D[Ingresar características de dolor seleccionado]
+    D --> E[Guardar datos]
+    E --> F{Introducción de información completada}
+    F -- No --> C
+    F -- Sí --> G[Salir de la aplicación]
+
+```
+_Diagrama de flujo_
+
+En el siguiente diagrama se muestra el movimiento de la información para el funcionamiento de la aplicación.
 
 ```mermaid
 sequenceDiagram
@@ -125,49 +153,26 @@ sequenceDiagram
     Interfaz-->>Clínico: Muestra resultado
     Clínico -->>Usuario: Comunica resultados
 ```
+_Diagrama de secuencia_
+<br></br>
 
-```mermaid
-graph TD
-    A[Anrir aplicación] --> B[Ingresar extensión de cada dolor]
-    B --> C{Selección del dolor}
-    C --> D[Ingresar características de dolor seleccionado]
-    D --> E[Guardar datos]
-    E --> F{Introducción de información completada}
-    F -- No --> C
-    F -- Sí --> G[Salir de la aplicación]
-
-```
-
-
-
-### Diagrama Journey
+### Experiencia de usuario
+El uso inicialmente previsto para esta aplicación está dirigido a profesionales sanitarios, sin embargo a lo largo del desarrollo será posible considerar el valor de la aplicación para el control y monitorización del dolor por parte de los propios usuarios con dolor. Por este motivo, se muestra un diagrama de Journey para poder valorar la experiencia del usuario sin formación sanitaria.
 ```mermaid
 journey
     title Experiencia del Usuario
     section Inicio
-      Abrir app: 5: Usuario
-    section Registro de Síntomas
-      Seleccionar zona: 4: Usuario
-      Ingresar síntomas: 4: Usuario
-    section Resultados
+      Abrir app: 6: Usuario
+    section Mapeo
+      Dibujar una primera zona: 4: Usuario
+      Dibujar más zonas : 2: Usuario
+    section Síntomas
+      Seleccionar el dolor: 4: Usuario
+      Ingresar síntomas: 3: Usuario
+      Volver al mapa: 3: Usuario
+    section Fin
       Guardar datos: 5: Sistema
-      Mostrar sugerencias: 4: Sistema
-```
-
-### Diagrama Git
-```mermaid
-gitGraph
-    commit id: "Inicio"
-    branch develop
-    commit id: "UI básica"
-    branch feature-database
-    checkout feature-database
-    commit id: "Modelo de base de datos"
-    checkout develop
-    merge feature-database
-    commit id: "Interfaz avanzada"
-    checkout main
-    merge develop
+      Mostrar resumen de interes para el usuario: 4: Sistema
 ```
 
 
