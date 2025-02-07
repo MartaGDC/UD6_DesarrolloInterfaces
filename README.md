@@ -27,7 +27,7 @@ El dolor crónico se define como aquel dolor cuya duración es mayr a 3 meses. S
 ![Barómetro del dolor en España](images/BarometroDolor.jpg)
 
 
-En la siguiente tabla se muestran las características del dolor crónico entre la población encuentada[1].
+En la siguiente tabla se muestran las características del dolor crónico entre la población encuentada[[1]].
 | Variables                                                       | Categorías                                 | %           |
 |-----------------------------------------------------------------|--------------------------------------------|:-----------:| 
 | **N=1.825**                                                                                                                |
@@ -76,6 +76,9 @@ En la siguiente tabla se muestran las características del dolor crónico entre 
 El objetivo de este proyecto es desarrollar una aplicación que permita facilitar la conversación en torno al dolor y ayude a su cuantificación objetiva, centrándose en la superficie afectada, su lateralidad y los dermatomas involucrados, y secundariamente de las características semiológicas y simtomáticas del dolor.
 
 El código de este proyecto se encontrará disponible en un repositorio de mi cuenta personal de [GitHub](https://github.com/MartaGDC).
+
+![Seguidores en GitHub](https://img.shields.io/github/followers/MartaGDC?style=social)
+
 
 <br></br>
 
